@@ -4,6 +4,11 @@
   "description": "Playing with node.js and docker",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "up": "docker-compose up",
+    "up-build": "docker-compose up --build",
+    "docker-build": "docker build -t zamiek/visitsweb:latest .",
+    "docker-run": "docker run -p 8080:8080 zamiek/visitsweb",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,5 +16,9 @@
     "url": "none"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "async-redis": "^1.1.7",
+    "express": "^4.17.1"
+  }
 }
