@@ -1,0 +1,15 @@
+{
+  "name": "visitsweb",
+  "version": "1.0.0",
+  "description": "Playing with node.js and docker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "author": "",
+  "license": "ISC"
+}
