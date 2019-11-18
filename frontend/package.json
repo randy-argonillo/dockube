@@ -13,7 +13,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "docker:run": "docker run -p 3000:3000 -it -v /app/node_modules -v $(pwd):/app zamiek/frontend",
-    "docker:build": "docker build -t zamiek/frontend:latest -f Dockerfile.env .",
+    "docker:build": "docker build -t zamiek/frontend:latest -f Dockerfile.dev .",
     "compose:up:dev": "docker-compose -f docker-compose.dev.yml up",
     "compose:down:dev": "docker-compose -f docker-compose.dev.yml down",
     "compose:up:prod": "docker-compose -f docker-compose.prod.yml up",
