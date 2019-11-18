@@ -1,0 +1,37 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-scripts": "3.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "docker:run": "docker run -p 3000:3000 -it -v /app/node_modules -v $(pwd):/app zamiek/frontend",
+    "docker:build": "docker build -t zamiek/frontend:latest -f Dockerfile.env .",
+    "compose:up:dev": "docker-compose -f docker-compose.dev.yml up",
+    "compose:down:dev": "docker-compose -f docker-compose.dev.yml down",
+    "compose:up:prod": "docker-compose -f docker-compose.prod.yml up",
+    "compose:down:prod": "docker-compose -f docker-compose.prod.yml down"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
